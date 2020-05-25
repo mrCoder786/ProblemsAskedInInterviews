@@ -1,7 +1,10 @@
 package com.example.apps
 
+import org.apache.log4j.{Level, Logger}
+
 object GraphPresentation {
   def main(args: Array[String]): Unit = {
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val vertices = IndexedSeq("Societe Generale","Credit Agricole","UBS","HSBC","BNP Paribas","RBS","Santander","Boursorama","Deutsche")
     val edges = Seq((0,1),(0,2),(1,3),(1,4),(2,5),(1,7),(3,6),(4,7),(5,8))
     val graph = new Graph(vertices,edges)

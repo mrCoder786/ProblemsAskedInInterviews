@@ -1,10 +1,13 @@
 package com.example.apps
 import com.example.common.AppVariables._
 import com.example.common.Schemas._
+import org.apache.log4j.{Level, Logger}
+
 import scala.io.Source
 
 object AadharScala {
   def main(args: Array[String]): Unit = {
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val aadhar = new AadharCSVReader(auth)
     val stat = new AadharStatisticsComputer(aadhar)
     val result = stat.aadharD
