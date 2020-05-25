@@ -15,7 +15,6 @@ object WorldvsUS {
     barley.join(beef,Seq("year"),"left").join(corn,Seq("year"),"left").join(cotton,Seq("year"),"left").show()
   }
 
-
   val barleyUS = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Barley'!A494:D506").option("useHeader",false).option("inferSchema", false).schema(schemaUS).option("treatEmptyValuesAsNulls", "false").load(baseline)
   val barleyWorld = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Barley'!A512:D524").option("useHeader",false).option("inferSchema", false).schema(schemaROW).option("treatEmptyValuesAsNulls", "false").load(baseline)
   val beefUS = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Beef'!A584:D596").option("useHeader",false).option("inferSchema", false).schema(schemaUS).option("treatEmptyValuesAsNulls", "false").load(baseline)
@@ -24,6 +23,5 @@ object WorldvsUS {
   val cornWorld = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Corn'!A674:D686").option("useHeader",false).option("inferSchema", false).schema(schemaROW).option("treatEmptyValuesAsNulls", "false").load(baseline)
   val cottonUS = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Cotton'!A530:D542").option("useHeader",false).option("inferSchema", false).schema(schemaUS).option("treatEmptyValuesAsNulls", "false").load(baseline)
   val cottonWorld = spark.read.format("com.crealytics.spark.excel").option("dataAddress", "'Cotton'!A566:D578").option("useHeader",false).option("inferSchema", false).schema(schemaROW).option("treatEmptyValuesAsNulls", "false").load(baseline)
-
 
 }

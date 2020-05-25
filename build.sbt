@@ -10,6 +10,8 @@ libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-library" % scalaVersion.value,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
   "org.apache.spark" %% "spark-core" % sparkVersion,
-  "com.crealytics" %% "spark-excel" % "0.11.1"
+  "com.crealytics" %% "spark-excel" % "0.11.1",
+   "org.apache.poi" % "poi" % "4.1.1"
+
 
 )
