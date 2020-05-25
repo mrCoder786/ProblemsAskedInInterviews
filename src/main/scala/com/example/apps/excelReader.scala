@@ -1,19 +1,13 @@
 package com.example.apps
 import java.io.File
-
 import com.example.common.AppVariables._
 import com.example.common.Schemas._
-
-
 import scala.collection.JavaConversions._
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import java.io.FileInputStream
-
-import com.norbitltd.spoiwo.model.Cell
-import org.apache.poi.ss.usermodel
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-import scala.io.Source
+
 
 object excelReader {
   def main(args: Array[String]): Unit = {
@@ -23,6 +17,7 @@ object excelReader {
    val povertytab = poverty.filter(x=>(!x.Urban_Influence_Code_2003.isEmpty && !x.Rural_urban_Continuum_Code_2013.isEmpty))
      .filter(x=>x.Urban_Influence_Code_2003.toFloat%2==1 && x.Rural_urban_Continuum_Code_2013.toFloat%2==0)
        .map(x=>(stateMap(x.State),x.Area_name.concat(" "+x.State),x.Urban_Influence_Code_2003,x.Rural_urban_Continuum_Code_2013,over17Normal(x.PCTPOVALL_2018.toFloat,x.PCTPOV017_2018.toFloat)))
+  println(povertytab)
   }
 
   class PovertyExcelReader(val fileName: String,val start:Int,val end:Int) extends ExcelReader {
