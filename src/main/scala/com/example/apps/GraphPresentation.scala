@@ -2,6 +2,8 @@ package com.example.apps
 
 import org.apache.log4j.{Level, Logger}
 
+/* Problem4: Question2 (using plain scala) */
+
 object GraphPresentation {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)

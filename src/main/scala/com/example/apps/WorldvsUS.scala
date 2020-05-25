@@ -4,6 +4,8 @@ import com.example.common.Schemas._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
 
+/* Problem3: Question2 (using Spark) */
+
 object WorldvsUS {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
