@@ -2,8 +2,9 @@ package com.example.apps
 import com.example.common.AppVariables._
 import com.example.common.Schemas._
 import org.apache.log4j.{Level, Logger}
-
 import scala.io.Source
+
+/* Problem2: Question1 (using plain Scala) */
 
 object AadharScala {
   def main(args: Array[String]): Unit = {

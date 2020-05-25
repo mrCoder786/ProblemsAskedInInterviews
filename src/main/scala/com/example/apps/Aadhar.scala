@@ -2,7 +2,7 @@ package com.example.apps
 import com.example.common.AppVariables._
 import org.apache.log4j.{Level, Logger}
 
-
+/* Problem2: Question2 (using Spark) */
 
 object Aadhar {
   def main(args: Array[String]): Unit = {

@@ -5,6 +5,8 @@ import scala.collection.JavaConversions._
 import com.example.common.Schemas.BarleyUS
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
+/* Problem3: Question1 (using plain Scala) */
+
 object WorldvsUsScala {
   def main(args:Array[String]): Unit ={
 

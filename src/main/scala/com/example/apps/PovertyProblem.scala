@@ -3,7 +3,7 @@ import com.example.common.AppVariables._
 import com.example.common.Schemas._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
-
+/* Problem1: Question2 (using Spark) */
 
 object PovertyProblem {
   def main(args: Array[String]): Unit = {

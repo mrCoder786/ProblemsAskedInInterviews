@@ -4,7 +4,8 @@ import org.apache.spark.sql.expressions.Window
 import com.example.common.Schemas._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
-import spark.implicits._
+
+/* Problem4: Question1 (using spark) */
 
 object Sensors {
   def main(args: Array[String]): Unit = {
