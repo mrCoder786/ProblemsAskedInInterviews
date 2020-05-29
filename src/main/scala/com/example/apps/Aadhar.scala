@@ -4,7 +4,8 @@ import org.apache.log4j.{Level, Logger}
 
 /* Problem2: Question2 (using Spark) */
 
-object Aadhar {
+object
+Aadhar {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
     //displaying 10 records of required result
