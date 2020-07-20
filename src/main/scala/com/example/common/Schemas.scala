@@ -52,4 +52,10 @@ object Schemas {
     .add("YieldROW","String")
     .add("ProductionROW","String")
 
+  case class aadhardtl(aua: String, sa: String,  res_state: String)
+  case class poverty(State : String, Area_name : String,  Urban_Influence_Code_2003: String, Rural_urban_Continuum_Code_2013 :String,PCTPOVALL_2018 :String,PCTPOV017_2018:String)
+  case class statesinfo(State_ab : String, State_name : String)
+  case class BarleyUS(year:String,harvestUS:String,YieldUS:String,ProductionUS:String)
+  case class BarleyROW(year:String,harvestROW:String,YieldROW:String,ProductionROW:String)
+
 }
